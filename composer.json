@@ -1,0 +1,13 @@
+{
+    "name": "that-chris-r/laravel-chargebee",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Rolfe",
+            "email": "christopher.rolfe198@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.4"
+    }
+}
