@@ -8,7 +8,7 @@ class ChargebeePlanCreating
 {
     use SerializesModels;
 
-    protected $plan;
+    public $plan;
 
     public function __construct($plan)
     {

@@ -4,14 +4,17 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use ThatChrisR\LaravelChargebee\Events\ChargebeePlanCreating;
+use ThatChrisR\LaravelChargebee\ChargebeePlan;
 
 class Plan extends Model
 {
-    protected $fillable = ['name', 'chargebee_id', 'owner_id'];
+    use ChargebeePlan;
+
+    protected $fillable = ['name', 'cost', 'chargebee_id', 'user_id'];
 
     protected $events = [
         'creating' => ChargebeePlanCreating::class
-    ]
+    ];
 
     public function user_subscribed_to_this_plan()
     {

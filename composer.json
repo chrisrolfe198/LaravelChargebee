@@ -7,7 +7,13 @@
             "email": "christopher.rolfe198@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "ThatChrisR\\LaravelChargebee\\": "src/"
+        }
+    },
     "require": {
-        "illuminate/support": "^5.4"
+        "illuminate/support": "^5.4",
+        "chargebee/chargebee-php": ">=2, <3"
     }
 }
