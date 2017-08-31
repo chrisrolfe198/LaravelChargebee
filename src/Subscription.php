@@ -39,7 +39,7 @@ class Subscription
 
         // Create Plan in Chargebee
         $result = ChargeBee_Plan::create([
-            "id" => "{$db_plan->id}-{$db_plan->owner_id}",
+            "id" => "{$db_plan->id}-{$db_plan->user_id}",
             "name" => $db_plan->name,
             "invoiceName" => "Swipedeck subscription for {$db_plan->name}",
             "price" => $db_plan->cost * 100,
